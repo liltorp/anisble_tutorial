@@ -70,7 +70,7 @@
       - 22/tcp
       - 80/tcp
       - 443/tcp
-- name: firewall rules for edir servers
+  - name: firewall rules for edir servers
     firewalld:
       port: "{{item}}"
       state: enabled
@@ -82,7 +82,7 @@
       - 636/tcp
       - 8030/tcp
       - 8443/tcp
-- name: firewall rules for aa-db servers
+  - name: firewall rules for aa-db servers
     firewalld:
       port: "{{item}}"
       state: enabled
@@ -96,7 +96,7 @@
       - 8432/tcp
       - 9200/tcp
       - 9300/tcp
-- name: firewall rules for aa-web servers
+  - name: firewall rules for aa-web servers
     firewalld:
       port: "{{item}}"
       state: enabled
