@@ -96,6 +96,8 @@
       - 8432/tcp
       - 9200/tcp
       - 9300/tcp
+      - 1812/udp
+      - 1813/udp
   - name: firewall rules for aa-web servers
     firewalld:
       port: "{{item}}"
@@ -110,4 +112,6 @@
       - 8432/tcp
       - 9200/tcp
       - 9300/tcp
+      - 1812/udp
+      - 1813/udp
       
